@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="style ind.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+      let conx=document.getElementsByClassName('fas fa-bars')
+      let cony=document.getElementsByClassName('far fa-times')
+      function fun1(){
+        //alert(document.getElementsByClassName("fas fa-bars"))
+        if(document.getElementById("line").className == "fas fa-times") document.getElementById("line").className="fas fa-bar"
+        else if(document.getElementById("line").className =document="fas fa-bar") document.getElementById("line").className ="fas fa-times"
+        
+        //style.visibility="hidden"
+        //document.getElementById("times").style.visibility="visible"
+      }
+      function fun2(){
+        document.getElementById("times").style.visibility="hidden"
+        document.getElementById("line").style.visibility="visible"
+      }
+    </script>
+    <style>
+        input{
+            background-color: white;
+            border: 1px solid black;
+        }
+        button{
+          color: white;
+          background-color:#0082e6;;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+        }
+        table ,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <input type="checkbox" name="check" value="" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars" id="line">
+        </i>
+        <!-- <i class="fas fa-times" id="times" style="visibility: visible;" onclick="fun2()"> </i>   -->
+        
+        </label>
+        <label class="logo"> </label>
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="asset.html">Asset Entry</a></li>
+            <li><a href="pBchain.html">Private Blockchain</a></li>
+            <li><a class="active" href="#">Public Blockchain</a></li>
+            </ul>
+    </nav><br><br>
+    <div class="container">
+        <h2>Private blockchain</h2>
+         <table>
+             <tr>
+                 <th>hash</th>
+                 <th>Previous Hash</th>
+                  
+                 <th>Business Data</th>
+                 
+             </tr>            
+             <tr>
+                <td>#1</td>
+                <td>#0</td>
+                 
+                <td>Business Data1</td>
+             </tr>
+             <tr>
+                <td>#2</td>
+                <td>#1</td>
+                 
+                <td>Business Data2</td>
+             </tr>
+             <tr>
+                <td>#3</td>
+                <td>#2</td>
+                 
+                <td>Business Data3</td>
+             </tr>
+             <tr>
+                <td>#4</td>
+                <td>#3</td>
+                 
+                <td>Business Data4</td>
+             </tr>
+         </table>
+    </div>
+  
+     
+       
+        
+  </body>
+</html>
